@@ -1,236 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>금오공과대학교 모바일소프트웨어연구실</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Reserch</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Member</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">국립금오공과대학교 D325</div>
-                <div class="masthead-heading text-uppercase">모바일소프트웨어 연구실</div>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">연구 과제</h2>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa fa-road fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">시공간 궤적 질의 처리</h4>
-                        <p class="text-muted">The importance of spatio-temporal trajectories for contact tracing has increased due to the recent COVID-19 pandemic. Spatio-temporal trajectories store time and spatial data of moving objects. In this paper, I propose query processing for spatio-temporal trajectories of moving objects. The spatiotemporal trajectory model of moving objects has point type spatial data for storing locations and timestamp type temporal data for time. A trajectory query is a query to search for pairs of users who have been in close contact by boarding the same bus. To process the trajectory query, I use the Geolife dataset provided by Microsoft. The proposed trajectory query processing method divides trajectory data by date and checks whether users’ trajectories were nearby for each date to generate information about contacts as the result.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-table fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">공간 인덱싱</h4>
-                        <p class="text-muted">Applications such as digital twins, urban planning, and facility management use spatial data consisting of geometric coordinates and additional non-spatial attributes. Traditional spatial indexes search for geometric coordinates, requiring a separate filtering process for non-spatial attributes. This paper proposes NR*-tree(Non-spatial and Spatial Region Star Tree), integrating non-spatial attributes into a spatial index to eliminate the filtering step and enhance search efficiency. Numerical non-spatial attributes extend the dimensions of MBRs(Minimum Bounding Rectangles) to store ranges, while categorical non-spatial attributes store single values in MBRs for filtering at leaf nodes. Experiments show that the NR*-tree reduces search time by up to 86.8% compared to the conventional R*-tree (Region Star Tree). Including the length of the major axis in MBRs during searches enhances map readability and further improves search performance.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-mobile fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">모바일 환경에서의 공간 데이터 분류</h4>
-                        <p class="text-muted">This paper proposes a method for classifying spatial data, which is increasingly important as a base technology for mobile environments and digital twins, using deep learning technology. CNN is used as a deep learning technology for spatial data classification. A dataset for learning is constructed by preprocessing spatial data. The learning model for training and validating the dataset consists of a convolution layer and a fully connected layer. The convolution layer adopts the convolution layer of VGG16 and uses transfer learning. The fully connected layer consists of a Flatten layer, a ReLU function, a Dropout layer, and a Softmax function. An experiment in which the spatial data classification method proposed in this paper was applied to Korea national map was performed, and verification accuracy of 99.1% was obtained.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>금오공과대학교 모바일소프트웨어연구실</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
+<body id="page-top">
 
-
-<!-- 교수님 카드 -->
-<section class="page-section bg-light" id="portfolio">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">GOAT</h2>
-            <h3 class="section-subheading text-muted">저희 교수님이십니다.</h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 1-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#goatModal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/prof/goat.jpg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">오병우</div>
-                        <div class="portfolio-caption-subheading text-muted">Lab Head</div>
-                    </div>
-                </div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Reserch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Member</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
-
-
-<!--현재원 카드 -->
-<section class="page-section bg-light" id="portfolio">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Current Member</h2>
-            <h3 class="section-subheading text-muted">아름다운 우리 랩원들입니다.</h3>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">국립금오공과대학교 D325</div>
+            <div class="masthead-heading text-uppercase">모바일소프트웨어 연구실</div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 1-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">김현진</div>
-                        <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
-                    </div>
-                </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">연구 과제</h2>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 2-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">엄성준</div>
-                        <div class="portfolio-caption-subheading text-muted">UnderGraduate, Lab Leader</div>
-                    </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa fa-road fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">시공간 궤적 질의 처리</h4>
+                    <p class="text-muted">The importance of spatio-temporal trajectories for contact tracing has
+                        increased due to the recent COVID-19 pandemic. Spatio-temporal trajectories store time and
+                        spatial data of moving objects. In this paper, I propose query processing for spatio-temporal
+                        trajectories of moving objects. The spatiotemporal trajectory model of moving objects has point
+                        type spatial data for storing locations and timestamp type temporal data for time. A trajectory
+                        query is a query to search for pairs of users who have been in close contact by boarding the
+                        same bus. To process the trajectory query, I use the Geolife dataset provided by Microsoft. The
+                        proposed trajectory query processing method divides trajectory data by date and checks whether
+                        users’ trajectories were nearby for each date to generate information about contacts as the
+                        result.</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 3-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">박찬규</div>
-                        <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
-                    </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-table fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">공간 인덱싱</h4>
+                    <p class="text-muted">Applications such as digital twins, urban planning, and facility management
+                        use spatial data consisting of geometric coordinates and additional non-spatial attributes.
+                        Traditional spatial indexes search for geometric coordinates, requiring a separate filtering
+                        process for non-spatial attributes. This paper proposes NR*-tree(Non-spatial and Spatial Region
+                        Star Tree), integrating non-spatial attributes into a spatial index to eliminate the filtering
+                        step and enhance search efficiency. Numerical non-spatial attributes extend the dimensions of
+                        MBRs(Minimum Bounding Rectangles) to store ranges, while categorical non-spatial attributes
+                        store single values in MBRs for filtering at leaf nodes. Experiments show that the NR*-tree
+                        reduces search time by up to 86.8% compared to the conventional R*-tree (Region Star Tree).
+                        Including the length of the major axis in MBRs during searches enhances map readability and
+                        further improves search performance.</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <!-- Portfolio item 4-->
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">김태형</div>
-                        <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
-                    </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-mobile fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">모바일 환경에서의 공간 데이터 분류</h4>
+                    <p class="text-muted">This paper proposes a method for classifying spatial data, which is
+                        increasingly important as a base technology for mobile environments and digital twins, using
+                        deep learning technology. CNN is used as a deep learning technology for spatial data
+                        classification. A dataset for learning is constructed by preprocessing spatial data. The
+                        learning model for training and validating the dataset consists of a convolution layer and a
+                        fully connected layer. The convolution layer adopts the convolution layer of VGG16 and uses
+                        transfer learning. The fully connected layer consists of a Flatten layer, a ReLU function, a
+                        Dropout layer, and a Softmax function. An experiment in which the spatial data classification
+                        method proposed in this paper was applied to Korea national map was performed, and verification
+                        accuracy of 99.1% was obtained.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!--졸업생 카드 -->
-<section class="page-section bg-light" id="portfolio">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Old member</h2>
-            <h3 class="section-subheading text-muted">존경스러운 졸업생입니다.</h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/grad/14이광오.jpeg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">이광오</div>
-                        <div class="portfolio-caption-subheading text-muted">14, UnderGraduate</div>
-                    </div>
-                </div>
+
+    <!-- 교수님 카드 -->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">GOAT</h2>
+                <h3 class="section-subheading text-muted">저희 교수님이십니다.</h3>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/grad/16이상민.jpeg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">이상민</div>
-                        <div class="portfolio-caption-subheading text-muted">15, UnderGraduate</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/grad/16박성재.jpeg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">박성재</div>
-                        <div class="portfolio-caption-subheading text-muted">16, UnderGraduate</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/grad/17남병욱선배님.jpeg" alt="..." />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">남병욱</div>
-                        <div class="portfolio-caption-subheading text-muted">17, UnderGraduate</div>
-                    </div>
-                </div>
-            </div>
+            <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 1-->
                     <div class="portfolio-item">
-                            <img class="img-fluid" src="assets/img/grad/1.jpg" alt="..." />
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#goatModal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/prof/goat.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">오병우</div>
+                            <div class="portfolio-caption-subheading text-muted">Lab Head</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--현재원 카드 -->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Current Member</h2>
+                <h3 class="section-subheading text-muted">아름다운 우리 랩원들입니다.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">김현진</div>
+                            <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">박찬규</div>
+                            <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">김태형</div>
+                            <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">이용현</div>
+                            <div class="portfolio-caption-subheading text-muted">UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--졸업생 카드 -->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Old member</h2>
+                <h3 class="section-subheading text-muted">존경스러운 졸업생입니다.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <img class="img-fluid" src="assets/img/grad/14이광오.jpeg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">이광오</div>
+                            <div class="portfolio-caption-subheading text-muted">14, UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <img class="img-fluid" src="assets/img/grad/16이상민.jpeg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">이상민</div>
+                            <div class="portfolio-caption-subheading text-muted">15, UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <img class="img-fluid" src="assets/img/grad/16박성재.jpeg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">박성재</div>
+                            <div class="portfolio-caption-subheading text-muted">16, UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <img class="img-fluid" src="assets/img/grad/17남병욱선배님.jpeg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">남병욱</div>
+                            <div class="portfolio-caption-subheading text-muted">17, UnderGraduate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <img class="img-fluid" src="assets/img/grad/1.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">신예찬</div>
@@ -238,252 +270,301 @@
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">문의</h2>
+                <h3 class="section-subheading text-muted">저흰 항상 열려있습니다.</h3>
+
+                <h3>contact : 엄성준(010-9555-8647)</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; 금오공대 컴퓨터공학 모바일소프트웨어연구실</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 교수님 모달-->
+    <div class="portfolio-modal modal fade" id="goatModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">오병우 교수님</h2>
+                                <p class="item-intro text-muted">The GOAT</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/prof/goat.jpg" alt="..." />
+                                <p>저희의 우상이십니다.</p>
+                                <ul class="list-inline">
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
 
-
-
-
-
-
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">문의</h2>
-                    <h3 class="section-subheading text-muted">저흰 항상 열려있습니다.</h3>
-
-                    <h3>contact : 엄성준(010-9555-8647)</h3>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; 금오공대 컴퓨터공학 모바일소프트웨어연구실</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-
-
-        <!-- 교수님 모달-->
-        <div class="portfolio-modal modal fade" id="goatModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">오병우 교수님</h2>
-                                    <p class="item-intro text-muted">The GOAT</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/prof/goat.jpg" alt="..." />
-                                    <p>저희의 우상이십니다.</p>
-                                    <ul class="list-inline">
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        닫기
-                                    </button>
-                                </div>
+    <!-- 현재원 팝업 -->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">김현진</h2>
+                                <p class="item-intro text-muted">UnderGraduate</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <p>Computer Engineering, 19</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Interest:</strong>
+                                        Infrastructure, Virtualization, System Design
+                                    </li>
+                                    <li>
+                                        <strong>project</strong>
+                                    </li>
+                                    <li>
+                                        (금오사이) 교내 풋살장 예약 서비스 개발 및 운영
+                                    </li>
+                                    <li>
+                                        myeochil-js - npm library that provides holiday && lunar-solar conversion
+                                    </li>
+                                    <li>
+                                        <strong>E-mail:</strong>
+                                        overlaylowerdir@gmail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- 현재원 팝업 -->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">김현진</h2>
-                                    <p class="item-intro text-muted">UnderGraduate</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Computer Engineering, 19</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Interest:</strong>
-                                            Infrastructure, Virtualization, System Design
-                                        </li>
-                                        <li>
-                                            <strong>project</strong>
-                                        </li>
-                                        <li>
-                                            (금오사이) 교내 풋살장 예약 서비스 개발 및 운영
-                                        </li>
-                                        <li>
-                                            myeochil-js - npm library that provides holiday && lunar-solar conversion
-                                        </li>
-                                        <li>
-                                            <strong>E-mail:</strong>
-                                            overlaylowerdir@gmail.com
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        닫기
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">엄성준</h2>
+                                <p class="item-intro text-muted">UnderGraduate, Lab Leader</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <p>Computer Engineering, 22</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Interest:</strong>
+                                        Backend, Database Management, Cloud Storage
+                                    </li>
+                                    <li>
+                                        <strong>project: </strong>
+                                        null
+                                    </li>
+                                    <li>
+                                        <strong>E-mail:</strong>
+                                        amk001345@gmail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">엄성준</h2>
-                                    <p class="item-intro text-muted">UnderGraduate, Lab Leader</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Computer Engineering, 22</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Interest:</strong>
-                                            Backend, Database Management, Cloud Storage
-                                        </li>
-                                        <li>
-                                            <strong>project: </strong>
-                                            null
-                                        </li>
-                                        <li>
-                                            <strong>E-mail:</strong>
-                                            amk001345@gmail.com
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        닫기
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">박찬규</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <p>Computer Engineering, 20</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Interest:</strong>
+                                        Fullstack
+                                    </li>
+                                    <li>
+                                        <strong>project: </strong>
+                                        null
+                                    </li>
+                                    <li>
+                                        <strong>E-mail:</strong>
+                                        goqudeo5165@naver.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">박찬규</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Computer Engineering, 20</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Interest:</strong>
-                                            Fullstack
-                                        </li>
-                                        <li>
-                                            <strong>project: </strong>
-                                            null
-                                        </li>
-                                        <li>
-                                            <strong>E-mail:</strong>
-                                            goqudeo5165@naver.com
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        닫기
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">김태형</h2>
+                                <p class="item-intro text-muted">UnderGraduate</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <p>Computer Engineering, 23</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Interest:</strong>
+                                        Stateful Game Server, Unity, Unreal
+                                    </li>
+                                    <li>
+                                        <strong>project: </strong>
+                                        null
+                                    </li>
+                                    <li>
+                                        <strong>E-mail:</strong>
+                                        20taetae00@gmail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">김태형</h2>
-                                    <p class="item-intro text-muted">UnderGraduate</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Computer Engineering, 23</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Interest:</strong>
-                                            Stateful Game Server, Unity, Unreal 
-                                        </li>
-                                        <li>
-                                            <strong>project: </strong>
-                                            null
-                                        </li>
-                                        <li>
-                                            <strong>E-mail:</strong>
-                                            20taetae00@gmail.com
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        닫기
-                                    </button>
-                                </div>
+    </div>
+
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">이용현</h2> <!-- -->
+                                <p class="item-intro text-muted">UnderGraduate</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <p>Computer Engineering, 22</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Interest:</strong>
+                                        React, Unity, Unreal, Computer Game Making
+                                    </li>
+                                    <li>
+                                        <strong>E-mail:</strong>
+                                        5fpseja5@gmail.com
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    닫기
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
 </html>
